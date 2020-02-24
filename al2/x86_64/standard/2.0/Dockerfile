@@ -527,4 +527,6 @@ RUN set -ex \
    && cd .. ; rm -rf stunnel-5.55* \
    && yum clean all
 
+RUN npm install -g yarn && yarn global add gatsby-cli
+
 ENTRYPOINT ["dockerd-entrypoint.sh"]
